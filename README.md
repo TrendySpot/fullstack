@@ -15,7 +15,7 @@
 본인 이름 또는 닉네임으로 브랜치를 생성해 주세요.
 
 ```
-git checkout -b practice/이름
+git checkout -b fullstack/이름
 
 ```
 
