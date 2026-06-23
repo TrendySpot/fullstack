@@ -1,0 +1,108 @@
+.popular-swiper-section {
+  max-width: 1180px;
+  margin: 40px auto 45px;
+  padding: 36px 0 44px;
+  border-radius: 36px;
+  background: #111;
+  overflow: hidden;
+}
+
+.popular-swiper-title {
+  padding: 0 36px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.popular-swiper-title p {
+  margin: 0 0 8px;
+  color: #ff5ea8;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.popular-swiper-title h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.popular-swiper {
+  padding: 10px 0 48px;
+}
+
+.popular-slide {
+  width: 360px;
+}
+
+.popular-card {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 24px;
+  padding: 0;
+  background: #222;
+  color: white;
+  text-align: left;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.popular-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popular-card-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.82),
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+.popular-card-content {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 24px;
+}
+
+.popular-badge {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #ff5ea8;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.popular-card-content h3 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.popular-card-content p {
+  margin: 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.popular-swiper .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.35;
+}
+
+.popular-swiper .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 999px;
+  opacity: 1;
+}

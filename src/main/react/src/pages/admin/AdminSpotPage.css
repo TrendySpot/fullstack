@@ -1,0 +1,430 @@
+.admin-spot-page {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 24px 70px;
+}
+
+.admin-spot-header {
+  margin-bottom: 28px;
+}
+
+.admin-spot-header p {
+  margin: 0 0 8px;
+  color: #6a5cff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.admin-spot-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #1e1e2f;
+}
+
+.admin-spot-panel {
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 18px 38px rgba(29, 29, 47, 0.08);
+}
+
+.admin-spot-panel h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.admin-spot-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-row.full {
+  grid-column: span 2;
+}
+
+.form-row label {
+  font-size: 13px;
+  font-weight: 800;
+  color: #1e1e2f;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  border-color: #6a5cff;
+  box-shadow: 0 0 0 3px rgba(106, 92, 255, 0.12);
+}
+
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions button {
+  border: 0;
+  border-radius: 16px;
+  padding: 14px 28px;
+  color: white;
+  font-weight: 900;
+  background: linear-gradient(135deg, #6a5cff, #ff5ea8);
+}
+/* ── 탭 ──────────────────────────────────────────────────── */
+.admin-spot-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.admin-spot-tabs .tab {
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 800;
+  background: white;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.admin-spot-tabs .tab.active {
+  border-color: #6a5cff;
+  background: linear-gradient(135deg, #6a5cff, #ff5ea8);
+  color: white;
+}
+
+/* ── 목록 테이블 ─────────────────────────────────────────── */
+.admin-spot-loading {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.admin-spot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.admin-spot-table thead th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 800;
+  color: #6b7280;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.admin-spot-table tbody td {
+  padding: 14px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+  color: #1e1e2f;
+}
+
+.admin-spot-table tbody tr:hover td {
+  background: #fafafa;
+}
+
+.spot-title-cell {
+  font-weight: 700;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spot-date-cell {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.spot-type-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.spot-type-badge.popup {
+  background: #ede9fe;
+  color: #6a5cff;
+}
+
+.spot-type-badge.exhibit {
+  background: #fce7f3;
+  color: #db2777;
+}
+
+.spot-action-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #ede9fe;
+  color: #6a5cff;
+}
+
+.edit-btn:hover {
+  background: #ddd6fe;
+}
+
+.delete-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+/* ── 페이지네이션 ────────────────────────────────────────── */
+.admin-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.admin-pagination button {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  background: white;
+  cursor: pointer;
+}
+
+.admin-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.admin-pagination span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+/* ── 수정 모달 ──────────────────────────────────────────── */
+.admin-spot-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-spot-modal {
+  background: white;
+  border-radius: 24px;
+  padding: 32px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  color: #1e1e2f;
+}
+
+.modal-close {
+  border: 0;
+  background: #f3f4f6;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.modal-close:hover {
+  background: #e5e7eb;
+}
+
+/* ── 헤더 레이아웃 (메인으로 버튼) ─────────────────────── */
+.admin-spot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.back-to-main-btn {
+  border: 2px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 800;
+  background: white;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.back-to-main-btn:hover {
+  border-color: #6a5cff;
+  color: #6a5cff;
+}
+
+/* ── 주소 검색 ───────────────────────────────────────────── */
+.address-search-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.address-search-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.address-search-input-row input {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 13px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.address-search-input-row input:focus {
+  border-color: #6a5cff;
+  box-shadow: 0 0 0 3px rgba(106, 92, 255, 0.12);
+}
+
+.address-search-btn {
+  border: 0;
+  border-radius: 14px;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6a5cff, #ff5ea8);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.address-search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.address-search-results li {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.12s;
+}
+
+.address-search-results li:last-child {
+  border-bottom: none;
+}
+
+.address-search-results li:hover {
+  background: #f5f3ff;
+}
+
+.place-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e1e2f;
+}
+
+.place-addr {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.address-no-result {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 4px 0 0;
+  padding: 0 4px;
+}
+
+.address-mini-map {
+  width: 100%;
+  height: 220px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  margin-top: 4px;
+}
+
+.selected-address {
+  font-size: 13px;
+  color: #6a5cff;
+  font-weight: 700;
+  margin: 4px 0 0;
+}
+
+/* ── 자동 입력 안내 라벨 ─────────────────────────────────── */
+.auto-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6a5cff;
+  margin-left: 6px;
+}

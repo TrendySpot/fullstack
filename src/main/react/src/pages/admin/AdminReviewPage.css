@@ -1,0 +1,108 @@
+.admin-review-page {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 0 24px 70px;
+}
+
+.admin-review-header {
+  margin-bottom: 28px;
+}
+
+.admin-review-header p {
+  margin: 0 0 8px;
+  color: #6a5cff;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.admin-review-header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+  color: #1e1e2f;
+}
+
+.admin-review-panel {
+  background: white;
+  border-radius: 30px;
+  padding: 28px;
+  box-shadow: 0 18px 38px rgba(29, 29, 47, 0.08);
+}
+
+.admin-review-loading {
+  padding: 40px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.admin-review-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-review-table th,
+.admin-review-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f1f2f6;
+  text-align: left;
+  font-size: 14px;
+}
+
+.admin-review-table th {
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 800;
+  background: #fafbff;
+}
+
+.review-content {
+  max-width: 460px;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.delete-btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 9px 14px;
+  background: #fee2e2;
+  color: #ef4444;
+  font-weight: 800;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.empty-row {
+  text-align: center;
+  color: #9ca3af;
+  padding: 40px !important;
+}
+
+.admin-pagination {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.admin-pagination button {
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 16px;
+  background: #f1f2f6;
+  font-weight: 800;
+}
+
+.admin-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.admin-pagination span {
+  font-size: 14px;
+  font-weight: 800;
+}
